@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+/* redefinicao da template */
+.topo {
+	height: 252px;
+}
+.titulos-container, .conteudos-navegacao {
+	display: none;
+	visibility: hidden;
+}
+.corpo, .conteudos {
+	max-width: 2000px;
+	width: 100%;
+}
+.corpo {
+	padding-bottom: 0;
+}
+.conteudos {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* banners */
+.banners {
+	display: block;
+}
+/*  */
+.conteudos-largura-fixa {
+	margin: 0 auto;
+	max-width: 1150px;
+	overflow: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+}
+/* fotos(produtos) */
+.produtos-container {
+	background: url(../img/home-conteudos-fundo.png) repeat-x left top;
+	border-bottom: solid 2px #FF0000;
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.035);
+	margin-top: -35px;
+	max-width: 2000px;
+	overflow: visible;
+	padding-top: 35px;
+	position: relative;
+	width: 100%;
+}
+.produtos-container:after {
+	background: url(../img/home-separador.svg) no-repeat left top;
+	bottom: -20px;
+	content: "";
+	display: block;
+	height: 100rem;
+	left: 50%;
+	max-height: 40px;
+	max-width: 37px;
+	position: absolute;
+	width: 100%;
+	z-index: 2000;
+}
+.produtos {
+	float: left;
+	margin-bottom: 50px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 9;
+}
+.produtos-cabecalho {
+	margin: 0 auto;
+	margin-bottom: 28px;
+	max-width: 850px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+.produtos-cabecalho span {
+	background: #ffffff;
+	bottom: 0px;
+	color: #5d5d5d;
+	font-family: 'pf_agora_sans_prolight_italic';
+	font-size: 2rem;
+	padding: 2px 4px;
+	position: absolute;
+	right: 0px;
+}
+.produtos-cabecalho span a {
+	color: #5d5d5d;
+}
+.produtos-cabecalho span a:hover {
+	color: #e50000;
+	text-decoration: none;
+}
+.produtos-titulo {
+	max-width: 167px;
+}
+.produtos-nav {
+	float: left;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: 9;
+}
+.produtos-nav-esq, .produtos-nav-dir {
+	height: 100rem;
+	max-height: 91px;
+	max-width: 99px;
+	width: 100%;
+}
+.produtos-nav-esq {
+	background: url(../img/home-fotos-nav-esq.svg) no-repeat left top;
+	display: block;
+	float: left;
+}
+.produtos-nav-dir {
+	background: url(../img/home-fotos-nav-dir.svg) no-repeat left top;
+	display: block;
+	float: right;
+}
+.produto {
+	display: inline-block;
+	position: relative;
+	width: 14.86%;
+	z-index: 10;
+}
+.produto-img {
+	border: solid 3px transparent;
+	max-width: 166px;
+	padding: 1px;
+	width: 100%;
+}
+.produto-img:hover {
+	border: solid 3px #e50000;
+}
+/* intagram */
+.instagram, .facebook {
+	display: inline-block;
+	float: left;
+}
+.instagram {
+	width: 53%;
+	margin-right: 2%;
+}
+.instagram-titulo {
+	margin-bottom: 19px;
+	margin-top: 24px;
+	max-width: 205px;
+	width: 100%;
+}
+/* facebook */
+.facebook {
+	width: 45%;
+}
+.facebook-cabecalho {
+	color: #5d5d5d;
+	font-family: 'pf_agora_sans_prolight_italic';
+	font-size: 2rem;
+	margin-bottom: 31px;
+	text-align: right;
+	width: 100%;
+}
+@media screen and (max-width: 1169px) {
+.produtos-nav {
+	top: 20vw;
+}
+}
+@media screen and (max-width: 1134px) {
+.instagram, .facebook {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	width: 100%;
+}
+.instagram {
+	max-width: 569px;
+}
+.facebook-cabecalho {
+	border-top: solid 1px #EDEDED;
+	padding-top: 15px;
+	text-align: left;
+}
+}
+@media screen and (max-width: 1099px) {
+.produtos-nav {
+	top: 22vw;
+}
+}
+@media screen and (max-width: 899px) {
+.produtos-nav-dir, .produtos-nav-esq {
+	width: 10vw;
+}
+}
+@media screen and (max-width: 767px) {
+.produtos-nav {
+	top: 24vw;
+}
+}
+@media screen and (max-width: 719px) {
+.produtos-nav {
+	top: 25vw;
+}
+}
+@media screen and (max-width: 629px) {
+.produtos-container {
+	background: url(../img/home-conteudos-fundo.png) repeat left top;	
+}
+.produtos {
+	position: relative;
+}
+.produtos-nav {
+	padding: 0 1%;
+	position: fixed;
+	top: 287px;
+	z-index: 22;
+}
+.produtos-nav-dir, .produtos-nav-esq {
+	width: 71px;
+	position: relative;
+}
+.produto {
+	display: block;
+	width: 100%;
+}
+.mobile-z-index-alto, #rodape {
+	background: #fefefe;
+	float: left;
+	position: relative;
+	z-index: 1000;
+}
+#rodape {
+	background: url(../img/rodape-fundo.jpg) repeat-x left top #fefefe;
+}
+}
+@media screen and (max-width: 342px) {
+.produtos-cabecalho span {
+	font-size: 1.8rem;
+}
+}
